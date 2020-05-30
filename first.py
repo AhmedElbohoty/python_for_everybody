@@ -60,7 +60,7 @@ print(largest([45, 1, 890, 142, 4, 17, 6]))
 print(largest([45, 1, 8, 42, 4, 17, 6])) """
 
 
-def smallest(numbers):
+""" def smallest(numbers):
     smallest = None
     for number in numbers:
         if smallest is None:
@@ -71,7 +71,7 @@ def smallest(numbers):
 
 
 print(smallest([45, 0, 890, 142, 4, 17, 6]))
-print(smallest([45, 2, -8, 42, 4, 17, 6]))
+print(smallest([45, 2, -8, 42, 4, 17, 6])) """
 
 """ numbers = [14, 5, 99, 77, 13]
 
@@ -83,3 +83,34 @@ for i in numbers:
     print(i)
 
 print(found) """
+
+
+""" car = 'lancer'
+index = 0
+
+while index < len(car):
+    print(car[index])
+    index = index + 1
+
+for letter in car:
+    print(letter) """
+
+car = 'Lancer'
+fruit = 'banana'
+fruit_2 = '  banana  '
+
+# print(car[2:4])
+# print("e" in car)
+# print(dir(car))
+# print(car.find("a"))
+# print(car.lower().find("l"))
+# print(car.replace("a", "x"))
+
+""" print(fruit_2 + ".")
+print(fruit_2.lstrip() + ".")
+print(fruit_2.rstrip() + ".")
+print(fruit_2.strip() + ".") """
+
+# print(car.startswith("L"))
+print(fruit.find('a'))
+print(fruit.find('a', 4))
