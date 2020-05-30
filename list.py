@@ -23,7 +23,7 @@ print(len(inp.split('\n'))) """
     print(line) """
 
 # ============================================= #
-fname = input('Enter the file name: ')
+"""fname = input('Enter the file name: ')
 try:
     fhandle = open('./files/' + fname)
 except:
@@ -31,9 +31,20 @@ except:
     quit()
 count = 0
 
-for line in fhandle:
+ for line in fhandle:
     if not line.startswith('Subject:'):
         continue
     count = count + 1
 
-print('There were', count, 'subject lines in', fname)
+print('There were', count, 'subject lines in', fname) """
+
+handle = open('./files/mbox-short.txt')
+
+for line in handle:
+    line = line.rstrip()
+    words = line.split()
+
+    if len(words) < 3 or words[0] != 'From':
+        continue
+
+    print(words[2])
