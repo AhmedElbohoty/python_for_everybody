@@ -7,7 +7,7 @@ print(room['chair']) """
 """ bag = {'a': 1, 'b': 3}
 print(bag) """
 
-letters = ['a', 'b', 'c', 'a', 'b', 'c', 'c']
+letters = ['a', 'f', 'c', 'c', 'a', 'b', 'c', 'c']
 counts = dict()
 
 
@@ -37,4 +37,4 @@ for word, count in counts.items():
         bigWord = word
 
 
-print(bigWord, bigCount)
+#print(bigWord, bigCount)

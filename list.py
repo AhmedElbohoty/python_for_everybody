@@ -40,11 +40,14 @@ print('There were', count, 'subject lines in', fname) """
 
 handle = open('./files/mbox-short.txt')
 
-for line in handle:
+"""for line in handle:
     line = line.rstrip()
     words = line.split()
 
     if len(words) < 3 or words[0] != 'From':
         continue
 
-    print(words[2])
+    print(words[2]) """
+
+lines = [line.rstrip() for line in handle if line.startswith('From')]
+print(lines)
